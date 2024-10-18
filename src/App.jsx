@@ -9,6 +9,7 @@ import './App.css';
 import './pages/StyleContact.css'
 import './pages/StyleHome.css'
 import './pages/StyleLayout.css'
+import './pages/StyleBlogs.css'
 
 
 export default function App() {

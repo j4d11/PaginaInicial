@@ -1,5 +1,15 @@
+import React from 'react';
+import { motion } from 'framer-motion';
+
 const NoPage = () => {
-    return <h1>404</h1>;
-  };
-  
-  export default NoPage;
+  return (
+    <motion.div
+      animate={{ y: [-10, 10, -10] }}
+      transition={{ duration: 2, repeat: Infinity }}
+    >
+      Letras em movimento!
+    </motion.div>
+  );
+};
+
+export default NoPage;

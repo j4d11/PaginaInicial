@@ -1,0 +1,38 @@
+.BodyBlog{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 80vh;
+}
+
+.ClickButton{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.btnC{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    background-color: rgb(121, 195, 255);
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+}
+
+.btnC:hover {
+    background-color: rgb(44, 154, 245); 
+    transform: scale(1.05); 
+}
+
+.btnC:active {
+    transform: scale(0.95); 
+}
