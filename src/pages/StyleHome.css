@@ -1,19 +1,23 @@
-.Container{
+.Container {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    height: 80vh;
 }
 
-.labelName{
+.labelName {
     padding: 3px;
-  
 }
 
-.btnContainer{
+.btnContainer {
     display: flex;
     justify-content: center;
     margin-top: 10px;
 }
 
-.btn{
+.btn {
     width: 100px;
     height: 30px;
     border-radius: 5px;
@@ -25,6 +29,7 @@
     background-color: rgb(121, 195, 255);
     transition: background-color 0.3s ease, transform 0.2s ease; 
 }
+
 .btn:hover {
     background-color: rgb(44, 154, 245); 
     transform: scale(1.05); 
@@ -32,4 +37,16 @@
 
 .btn:active {
     transform: scale(0.95); 
+}
+
+.resultado {
+    padding: 5px;
+    font-size: 30px;
+    margin-top: 20px; 
+}
+
+img {
+    margin-top: 10px; 
+    max-width: 100%; 
+    height: auto; 
 }

@@ -1,17 +1,20 @@
-// import React from "react";
-import './Home.css';
+import React from "react";
+import './StyleHome.css';
 import { useState } from 'react';
-import ReactDOM from 'react-dom/client';
+import { ReactDOM } from 'react';
 
 const Home = () => {
-    const [name, setName] = useState()
+    const [name, setName] = useState('');
+    const [showName, setShowName] = useState(false); 
+
     const handleSubmit = (event) => {
         event.preventDefault();
-
+        setShowName(true); 
     }
+
     return (
         <div className="Container">
-            <h1>Bem-vindo a Página Inicial!</h1>
+            <h1>Bem-vindo à Página Inicial!</h1>
             <form onSubmit={handleSubmit}>
                 <div className='labelName'>
                     <label htmlFor="name">Insira seu nome:</label>
@@ -26,16 +29,16 @@ const Home = () => {
                 <div className='btnContainer'>
                     <button className='btn' type="submit">Enviar</button>
                 </div>
-
             </form>
-            {/* <div className='Text'>
-                <h1>Olá {name}!</h1>
-            </div> */}
-        </div>
-    )
 
+           <div className="ShowName">
+            {showName && <div className="resultado">Olá, {name}!</div>}
+            </div>
+        </div>
+    );
 };
 
 export default Home;
+
 
 

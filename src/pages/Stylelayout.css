@@ -1,0 +1,21 @@
+.Navegation {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    font-size: 18px; 
+    color: #000000; 
+    background-color: rgb(121, 195, 255);
+}
+
+.Navegation a {
+    display: flex; 
+    align-items: center; 
+    text-decoration: none;
+    color: inherit;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.Navegation a:hover {
+    color: rgb(0, 64, 124);
+}

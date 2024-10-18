@@ -6,7 +6,10 @@ import Blogs from "./pages/Blogs";
 import Contact from "./pages/Contact";
 import NoPage from "./pages/NoPage";
 import './App.css';
-import './pages/Home.css'
+import './pages/StyleContact.css'
+import './pages/StyleHome.css'
+import './pages/StyleLayout.css'
+
 
 export default function App() {
   return (
